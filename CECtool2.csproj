@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>CECtool2</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWindowsForms>True</UseWindowsForms>
+    <TargetFramework>net451</TargetFramework>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>Preview</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="CECtool2.Resources.IPC_Headcou.csv" />
+    <None Remove="CECtool2.Resources.ClosedXML.dll" />
+    <None Remove="CECtool2.Resources.DocumentFor.dll" />
+    <None Remove="CECtool2.Resources.LumenWorks..dll" />
+    <None Remove="CECtool2.Resources.Newtonsoft..dll" />
+    <EmbeddedResource Include="CECtool2.Resources.IPC_Headcou.csv" />
+    <EmbeddedResource Include="CECtool2.Resources.ClosedXML.dll" />
+    <EmbeddedResource Include="CECtool2.Resources.DocumentFor.dll" />
+    <EmbeddedResource Include="CECtool2.Resources.LumenWorks..dll" />
+    <EmbeddedResource Include="CECtool2.Resources.Newtonsoft..dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Data" />
+    <Reference Include="DocumentFormat.OpenXml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="LumenWorks.Framework.IO" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ClosedXML" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+</Project>
